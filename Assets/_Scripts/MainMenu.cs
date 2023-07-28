@@ -28,4 +28,13 @@ public class MainMenu : MonoBehaviour
         preIntro.SetActive(true);
 
     }
+
+    public void Quit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+
+        Application.Quit();
+    }
 }
