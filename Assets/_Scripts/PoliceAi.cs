@@ -8,8 +8,6 @@ public class PoliceAi : MonoBehaviour
     [SerializeField]
     NavMeshAgent agent;
 
-    
-
     public Transform target;
 
 
@@ -27,6 +25,7 @@ public class PoliceAi : MonoBehaviour
     {
        agent.SetDestination(target.position);
     }
+
     public void DriveToCorner(Transform t)
     {
         target.position = t.position;

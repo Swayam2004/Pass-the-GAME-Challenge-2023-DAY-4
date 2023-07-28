@@ -15,7 +15,7 @@ public class BustedScreen : MonoBehaviour
 
     private void Start()
     {
-        initialPosition = transform.position;
+        initialPosition = transform.localPosition;
         restartButton.onClick.AddListener(RestartLevel);
     }
 
@@ -34,12 +34,12 @@ public class BustedScreen : MonoBehaviour
 
         while (elapsedTime < slideDuration)
         {
-            transform.position = Vector3.Lerp(initialPosition, targetPosition, elapsedTime / slideDuration);
+            transform.localPosition = Vector3.Lerp(initialPosition, targetPosition, elapsedTime / slideDuration);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
-        transform.position = targetPosition;
+        transform.localPosition = targetPosition;
     }
 
     public void RestartLevel()

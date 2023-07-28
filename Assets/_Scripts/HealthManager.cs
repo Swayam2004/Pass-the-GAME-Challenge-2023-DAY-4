@@ -67,6 +67,7 @@ public class HealthManager : MonoBehaviour
         if (collision.gameObject.CompareTag("Police"))
         {
             ModifyHealth(-10f);
+            SoundManager.Instance.PlayHurtSound(transform.position, 3f);
         }
     }
 

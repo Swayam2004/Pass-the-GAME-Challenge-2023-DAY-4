@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WindZone : MonoBehaviour
 {
     MovementController player;
-
 
     public Transform direction;
     public float maxForce = 5f;
@@ -13,10 +10,19 @@ public class WindZone : MonoBehaviour
 
     public float maxDistance = 10f;
 
+    private bool _canPlaySound;
+
     private void FixedUpdate()
     {
-        if (player) {
+        if (player)
+        {
             player.AddExternalForce(direction.forward * Mathf.Lerp(maxForce, minForce, Mathf.Clamp01(Vector3.Distance(transform.position, player.transform.position) / maxDistance)));
+
+            if (_canPlaySound)
+            {
+                SoundManager.Instance.PlayStormWhooshSound(transform.position, 2f);
+                _canPlaySound = false;
+            }
         }
     }
 
@@ -26,6 +32,7 @@ public class WindZone : MonoBehaviour
         if (mc)
         {
             player = mc;
+            _canPlaySound = true;
         }
     }
 
@@ -35,7 +42,7 @@ public class WindZone : MonoBehaviour
         if (mc)
         {
             player = null;
+            _canPlaySound = false;
         }
     }
-
 }

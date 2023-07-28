@@ -13,7 +13,19 @@ MonoBehaviour:
   m_Name: AudioClipsRefSO
   m_EditorClassIdentifier: 
   TruckSound: {fileID: 8300000, guid: e914eba140d0d714894b8f9fc92f985e, type: 3}
+  BoostSound: {fileID: 8300000, guid: 5cf50de09f4643143bc1c9aaee5d407a, type: 3}
+  StormWhooshSound: {fileID: 8300000, guid: ea95cf98fde2ac94b8d87423141dfbfb, type: 3}
   PoliceSirenSounds:
   - {fileID: 8300000, guid: 6d797b510cdd628448c81c58dde2c262, type: 3}
   - {fileID: 8300000, guid: fca14922cd29ef54695411cd1a45c01a, type: 3}
-  NPCCarMoveSounds: []
+  HurtSounds:
+  - {fileID: 8300000, guid: c4608b7b92f90dc45869326da15fb32a, type: 3}
+  - {fileID: 8300000, guid: 30da9c75ea272604fba931ad2101f55b, type: 3}
+  - {fileID: 8300000, guid: b45558f081c9e304f84142a6467a803a, type: 3}
+  - {fileID: 8300000, guid: 0c23304d991998f46914168f1995e236, type: 3}
+  - {fileID: 8300000, guid: e9de399e0a9a63d45b8074d10aa686f9, type: 3}
+  PickUpSounds:
+  - {fileID: 8300000, guid: 56a3a13feca083442b74cb80ad294f79, type: 3}
+  - {fileID: 8300000, guid: d98bbd371924a91448b2a4e5b4f1033d, type: 3}
+  - {fileID: 8300000, guid: 66db32e1dbe6eeb4a86b1e34c61d4833, type: 3}
+  - {fileID: 8300000, guid: b9fb048116320d44ea0a58d4ebb39e8f, type: 3}

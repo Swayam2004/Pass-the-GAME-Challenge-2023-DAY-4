@@ -40,6 +40,8 @@ public class MovementController : MonoBehaviour
     float currentSpeed;
     Vector3 lastVelocity;
 
+    private bool _canPlayBoostSound;
+
     public bool DEBUG;
 
     public float GetSpeed()
@@ -87,6 +89,13 @@ public class MovementController : MonoBehaviour
         tempTopSpeed = topSpeed;
         topSpeed = 500f;
 
+        _canPlayBoostSound = true;
+        if (_canPlayBoostSound)
+        {
+            SoundManager.Instance.PlayBoostSound(transform.position, 2f);
+            _canPlayBoostSound = false;
+        }
+
     }
 
     void DeactivateBoost()
@@ -95,6 +104,7 @@ public class MovementController : MonoBehaviour
         boostMultiplier = 1;
         isBoosting = false;
         topSpeed = tempTopSpeed;
+        _canPlayBoostSound = false;
 
     }
 

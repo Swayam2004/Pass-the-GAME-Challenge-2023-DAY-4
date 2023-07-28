@@ -6,6 +6,9 @@ using UnityEngine;
 public class AudioClipsRefSO : ScriptableObject
 {
     public AudioClip TruckSound;
+    public AudioClip BoostSound;
+    public AudioClip StormWhooshSound;
     public AudioClip[] PoliceSirenSounds;
-    public AudioClip[] NPCCarMoveSounds;
+    public AudioClip[] HurtSounds;
+    public AudioClip[] PickUpSounds;
 }

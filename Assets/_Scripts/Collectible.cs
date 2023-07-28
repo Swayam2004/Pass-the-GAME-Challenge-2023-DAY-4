@@ -11,6 +11,8 @@ public class Collectible : MonoBehaviour
         {
             Game.Instance.AddScore(100);
             gameObject.SetActive(false);
+
+            SoundManager.Instance.PlayPickUpSound(transform.position, 3f);
         }
     }
 }
