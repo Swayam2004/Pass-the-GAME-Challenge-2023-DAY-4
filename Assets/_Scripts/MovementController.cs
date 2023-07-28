@@ -52,7 +52,7 @@ public class MovementController : MonoBehaviour
         return lastVelocity;
     }
 
-    public float GetCurrentSpeed01()
+    public float GetCurrentSpeedNormalized()
     {
         return Mathf.Clamp01(currentSpeed / topSpeed);
     }

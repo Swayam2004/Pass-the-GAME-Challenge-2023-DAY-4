@@ -27,7 +27,7 @@ public class BusSign : MonoBehaviour
         if(Vector3.Distance(this.transform.position, player.transform.position) < 2)
         {
 
-            if (player.GetComponent<MovementController>().GetCurrentSpeed01() <= 0.1f)
+            if (player.GetComponent<MovementController>().GetCurrentSpeedNormalized() <= 0.1f)
             {
                 used = true;
                 StartCoroutine(Endstation());

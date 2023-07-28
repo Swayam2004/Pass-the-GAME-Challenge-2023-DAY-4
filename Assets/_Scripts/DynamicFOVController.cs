@@ -21,7 +21,7 @@ public class DynamicFOVController : MonoBehaviour
     void Update()
     {
         // Get the current normalized speed from the movementController
-        float speed01 = movementController.GetCurrentSpeed01();
+        float speed01 = movementController.GetCurrentSpeedNormalized();
 
         // Interpolate the desired FOV between minFov and maxSpeedFov
         float targetFov = Mathf.Lerp(minFov, maxSpeedFov, speed01);

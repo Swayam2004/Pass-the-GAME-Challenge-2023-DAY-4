@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 879726a8227303e41bdfa66b4e3af3de, type: 3}
+  m_Name: AudioClipsRefSO
+  m_EditorClassIdentifier: 
+  TruckSound: {fileID: 8300000, guid: e914eba140d0d714894b8f9fc92f985e, type: 3}
+  PoliceSirenSounds:
+  - {fileID: 8300000, guid: 6d797b510cdd628448c81c58dde2c262, type: 3}
+  - {fileID: 8300000, guid: fca14922cd29ef54695411cd1a45c01a, type: 3}
+  NPCCarMoveSounds: []

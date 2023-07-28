@@ -8,6 +8,8 @@ public class Game : MonoBehaviour
 {
     public static Game Instance;
 
+    [SerializeField] private AudioClipsRefSO _audioClipsRefSO;
+
     int score;
     public TextMeshProUGUI scoreText;
 
@@ -27,6 +29,7 @@ public class Game : MonoBehaviour
             destructionPool[i] = newObject;
         }
     }
+
     public void AddScore(int value)
     {
         score += value;
@@ -41,4 +44,8 @@ public class Game : MonoBehaviour
         destructionPoolIndex = destructionPoolIndex % destructionPool.Length;
     }
 
+    public AudioClipsRefSO GetAudioClipsRefSO()
+    {
+        return _audioClipsRefSO;
+    }
 }

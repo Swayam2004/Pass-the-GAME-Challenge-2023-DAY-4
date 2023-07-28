@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/_Scenes/MainMenu.unity
     guid: ea041c7a8636bc54cb6d7d06b296cd9b
   - enabled: 1
-    path: Assets/Scenes/Bus Chase City.unity
+    path: Assets/_Scenes/Bus Chase City.unity
     guid: 8209981bed0832c4badc2d6df84758e3
   m_configObjects: {}
